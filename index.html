@@ -6,6 +6,17 @@
 <title>He Gave His Life — a story | Trinity Bible Church</title>
 <meta name="description" content="An animated storybook of the gospel: the world made good, broken by sin, and restored through the cross. From Trinity Bible Church.">
 <meta name="theme-color" content="#1f2b5b">
+<link rel="canonical" href="https://hegavehis.life/">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hegavehis.life/">
+<meta property="og:title" content="He Gave His Life">
+<meta property="og:description" content="A short story about God, us, and the gift Jesus offers. Tap through it in two minutes.">
+<meta property="og:image" content="https://hegavehis.life/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -113,6 +124,7 @@ body{font-family:'Poppins',system-ui,sans-serif;background:#0e1327;color:var(--i
   text-decoration:none;color:#231a02;background:linear-gradient(180deg,var(--gold-soft),#e8a70f);
   box-shadow:0 8px 22px rgba(226,166,20,.4)}
 .btn.ghost{background:none;color:var(--navy);border:2.5px solid var(--navy);box-shadow:none}
+.btn.share{font-family:inherit;cursor:pointer;background:none}
 .credit{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#8b8578;text-align:center;margin-top:.4rem}
 .restart{background:none;border:none;font-family:inherit;font-weight:700;font-size:.8rem;
   color:#8b8578;cursor:pointer;text-decoration:underline;margin-top:.2rem}
@@ -157,10 +169,11 @@ body{font-family:'Poppins',system-ui,sans-serif;background:#0e1327;color:var(--i
 #fs .ic-exit{display:none}
 #fs.on .ic-enter{display:none}
 #fs.on .ic-exit{display:block}
-#hint{position:fixed;left:50%;bottom:calc(38px + env(safe-area-inset-bottom));transform:translateX(-50%);
-  z-index:10;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
-  color:#8b8578;animation:hintpulse 1.8s ease-in-out infinite;pointer-events:none;white-space:nowrap}
-@keyframes hintpulse{0%,100%{opacity:.45}50%{opacity:1}}
+#hint{position:fixed;left:50%;bottom:calc(32px + env(safe-area-inset-bottom));transform:translateX(-50%);
+  z-index:10;font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:#fff;background:var(--navy);padding:.4rem 1.1rem;border-radius:999px;
+  box-shadow:0 6px 18px rgba(31,43,91,.3);animation:hintpulse 1.8s ease-in-out infinite;pointer-events:none;white-space:nowrap}
+@keyframes hintpulse{0%,100%{opacity:.7}50%{opacity:1}}
 
 @media (prefers-reduced-motion: reduce){
   .page.active .el,.page.active .bubble,.page.active .grow-item,.page.active .glowdisc
@@ -243,9 +256,9 @@ body{font-family:'Poppins',system-ui,sans-serif;background:#0e1327;color:var(--i
       <div class="el rise" style="--x:84%;--y:64%;--w:32%;--d:.3s"><img src="storybook-assets/stairs-b.png" alt="another staircase"></div>
       <div class="el fade" style="--x:51%;--y:86%;--w:38%;--d:.5s"><img src="storybook-assets/pit.png" alt="a deep pit"></div>
       <div class="el pop" style="--x:16%;--y:51%;--w:16%;--d:.8s"><img src="storybook-assets/rescuer-running.png" alt="a person climbing" style="transform:scaleX(-1)"></div>
-      <div class="el pop" style="--x:26%;--y:12%;--w:auto;--d:1.05s"><div class="chip">Being nice</div></div>
-      <div class="el pop" style="--x:53%;--y:6%;--w:auto;--d:1.25s"><div class="chip">Saying Prayers</div></div>
-      <div class="el pop" style="--x:78%;--y:14%;--w:auto;--d:1.45s"><div class="chip">Attending church</div></div>
+      <div class="el pop" style="--x:24%;--y:20%;--w:auto;--d:1.05s"><div class="chip">Being nice</div></div>
+      <div class="el pop" style="--x:50%;--y:9%;--w:auto;--d:1.25s"><div class="chip">Saying prayers</div></div>
+      <div class="el pop" style="--x:72%;--y:25%;--w:auto;--d:1.45s"><div class="chip">Attending church</div></div>
     </div>
     <div class="text">
       <div class="bubble black" style="--d:1.8s">Many of us try to deal with <span class="hl-r">sin</span> on our own.
@@ -359,7 +372,7 @@ body{font-family:'Poppins',system-ui,sans-serif;background:#0e1327;color:var(--i
       <div class="h-grow">Ways to grow with God</div>
       <div class="grow-row">
         <div class="grow-item" style="--d:.25s"><div class="icon"><img src="storybook-assets/bible.png" alt="a Bible"></div><span>Read the Bible</span></div>
-        <div class="grow-item" style="--d:.45s"><div class="icon"><img src="storybook-assets/friends.png" alt="friends"></div><span>Pray and Obey</span></div>
+        <div class="grow-item" style="--d:.45s"><div class="icon"><img src="storybook-assets/stick-kneeling.png" alt="a person kneeling in prayer"></div><span>Pray and Obey</span></div>
         <div class="grow-item" style="--d:.65s"><div class="icon"><img src="storybook-assets/church.png" alt="a church"></div><span>Join a local church</span></div>
       </div>
       <p class="note">These things do not save you, but they help you grow.</p>
@@ -367,6 +380,7 @@ body{font-family:'Poppins',system-ui,sans-serif;background:#0e1327;color:var(--i
         <a class="btn" href="https://www.mytrinitybible.com/contact" target="_blank" rel="noopener">Reach out to us</a>
         <a class="btn ghost" href="https://www.mytrinitybible.com/going-deeper/" target="_blank" rel="noopener">More resources</a>
       </div>
+      <button class="btn ghost share" id="share">Share this story</button>
       <div class="credit">Trinity Bible Church</div>
       <button class="restart" id="restart">↺ Start the story over</button>
     </div>
@@ -394,7 +408,7 @@ body{font-family:'Poppins',system-ui,sans-serif;background:#0e1327;color:var(--i
   <svg class="ic-enter" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
   <svg class="ic-exit" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>
 </button>
-<div id="hint">tap anywhere ▸</div>
+<div id="hint">tap to begin ▸</div>
 <div id="dots"></div>
 <audio id="bgm" src="music.mp3" loop preload="auto"></audio>
 
@@ -475,6 +489,16 @@ body{font-family:'Poppins',system-ui,sans-serif;background:#0e1327;color:var(--i
     advance();});
   back.addEventListener('click',function(e){e.stopPropagation();go(cur-1);});
   document.getElementById('restart').addEventListener('click',function(e){e.stopPropagation();go(0);});
+
+  /* share: the phone's own share sheet where it exists, else copy the link */
+  var shareBtn=document.getElementById('share');
+  shareBtn.addEventListener('click',function(e){e.stopPropagation();
+    var url='https://hegavehis.life/';
+    if(navigator.share){navigator.share({title:'He Gave His Life',text:'A short story worth two minutes:',url:url}).catch(function(){});return;}
+    if(navigator.clipboard)navigator.clipboard.writeText(url).then(function(){
+      shareBtn.textContent='Link copied!';
+      setTimeout(function(){shareBtn.textContent='Share this story';},2000);});
+  });
 
   /* asset credits modal — unobtrusive, only reachable from the last page */
   var creditsModal=document.getElementById('credits-modal');
